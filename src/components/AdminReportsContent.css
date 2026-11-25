@@ -1,0 +1,207 @@
+/* ================= COLOR PALETTE ================= */
+:root {
+    --primary: #800000;
+    --background: #F4F1EA;
+    --heading: #1A2B3C;
+    --text: #5F6368;
+    --card-bg: #FFFFFF;
+  }
+  
+  /* ================= PAGE ================= */
+  .reports-container {
+    background: var(--background);
+    padding: 25px;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* HEADER */
+  .reports-header {
+    background: linear-gradient(90deg, #4b0000, #800000, #a83232);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: -27px;
+    margin-bottom: 8px;
+  }
+  
+  .reports-header h2 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .reports-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  
+  /* SCROLL SECTION */
+  .reports-section-scroll {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 6px;
+  }
+  
+  /* Scrollbar */
+  .reports-section-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .reports-section-scroll::-webkit-scrollbar-thumb {
+    background-color: #800000;
+    border-radius: 10px;
+  }
+  
+  .reports-section-scroll::-webkit-scrollbar-track {
+    background-color: #F4F1EA;
+  }
+  
+  /* CARD */
+  .justification-card {
+    background: var(--card-bg);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-top: 10px;
+  }
+  
+  .reports-card-title {
+    color: var(--heading);
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: -5px;
+  }
+  
+  /* FORM */
+  .justification-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .justification-form input,
+  .justification-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .justification-form input:focus,
+  .justification-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  
+  /* DATE ROW */
+  .date-row {
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* BUTTON */
+  .justification-form button {
+    margin-top: 8px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .justification-form button:hover {
+    background: #660000;
+  }
+
+  /* FILE UPLOAD */
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .upload-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--heading);
+  }
+  
+  .file-upload input[type="file"] {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 13px;
+  }
+  
+  .file-name {
+    font-size: 12px;
+    color: var(--text);
+  }
+  /* ================= JUSTIFICATION TABLE CARD ================= */
+
+.justification-table-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-top: 15px;
+}
+
+/* TABLE */
+
+/* TABLE */
+
+.justification-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center; /* centers all content */
+}
+
+.justification-table thead {
+  background: #f8f8f8;
+}
+
+.justification-table th {
+  padding: 10px;
+  color: var(--heading);
+  border-bottom: 1px solid #ddd;
+  text-align: center; /* center headers */
+}
+
+.justification-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: var(--text);
+  text-align: center; /* center table data */
+}
+
+/* ROW HOVER */
+
+.justification-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* VIEW DOCUMENT BUTTON */
+
+.justification-table button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.justification-table button:hover {
+  background: #660000;
+}

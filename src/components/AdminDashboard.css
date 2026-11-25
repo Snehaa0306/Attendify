@@ -1,0 +1,96 @@
+/* Common page */
+.admin-page {
+  position: fixed;
+  inset: 0;
+  background-color: #F4F1EA;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 290px;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo */
+.logo {
+  width: 190px;
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: 43px;
+}
+
+/* Dashboard */
+.btn-dashboard,
+.btn-assign,
+.btn-faculty,
+.btn-classes,
+.btn-reports,
+.btn-defaulter,
+.btn-attendance {
+  width: 90%;
+  margin: 6px auto;
+  padding: 10px 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 15px;
+  color: #1A2B3C;
+  cursor: pointer;
+}
+
+/* Logout */
+.btn-logout {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  background-color: #800000;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Hover + Click → BUTTON turns maroon */
+.btn-dashboard:hover,
+.btn-dashboard:active,
+.btn-assign:hover,
+.btn-assign:active,
+.btn-faculty:hover,
+.btn-faculty:active,
+.btn-classes:hover,
+.btn-classes:active,
+.btn-reports:hover,
+.btn-reports:active,
+.btn-attendance:hover,
+.btn-attendance:active {
+  background-color: #800000;
+  color: #FFFFFF;
+  border-color: #800000;
+}
+
+/* Logout hover */
+.btn-logout:hover {
+  background-color: #9A0000;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #F4F1EA;
+  color: #5F6368;
+}

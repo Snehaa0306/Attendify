@@ -1,0 +1,77 @@
+/* Report message */
+
+.no-report{
+    text-align:center;
+    color:gray;
+    font-size:14px;
+  }
+  
+  /* Scrollable report container */
+  
+  .classes-white-card{
+    max-height:500px;
+    overflow-y:auto;
+    padding-right:5px;
+  }
+  
+  /* Scrollbar styling */
+  
+  .classes-white-card::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .classes-white-card::-webkit-scrollbar-thumb {
+    background-color: #800000;
+    border-radius: 10px;
+  }
+  
+  .classes-white-card::-webkit-scrollbar-track {
+    background-color: #F4F1EA;
+  }
+  
+  /* Report Card */
+  
+  .report-card{
+    margin-bottom:18px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:#ffffff;
+    transition:0.2s;
+  }
+  
+  /* Hover effect */
+  
+  .report-card:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  /* Title */
+  
+  .report-card h3{
+    margin:0 0 6px;
+    font-size:18px;
+    color:#1A2B3C;
+  }
+  
+  /* Paragraph */
+  
+  .report-card p{
+    margin:4px 0;
+    font-size:14px;
+    color:#5F6368;
+  }
+  
+  /* Present */
+  
+  .present-count{
+    color:#046a07;
+    font-weight:700;
+  }
+  
+  /* Absent */
+  
+  .absent-count{
+    color:#a4161a;
+    font-weight:700;
+  }

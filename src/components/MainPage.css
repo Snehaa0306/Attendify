@@ -1,0 +1,114 @@
+/* Main Page */
+.main-page {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* College Header Container */
+.college-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.college-name,
+.college-fullname {
+    font-weight: 600;
+    font-size: 18px;
+    color: #8b0000;
+    margin: 0;
+    line-height: 1.1;
+
+    transform: translateX(-3px); /* shift left */
+}
+
+
+/* Location */
+.college-location {
+    font-weight: 400;
+    font-size: 14px;
+    color: #8b0000;
+    margin-top: 6px;
+    line-height: 1.1;
+    transform: translateX(-22px);
+}
+
+/* Department Name – Subtle Maroon Neon */
+.department-name {
+    font-family: 'Arial Black', 'Arial', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    margin: 0; /* 🔥 remove all margins */
+
+    text-shadow:
+        0 0 2px rgba(128, 0, 0, 0.65),
+        0 0 6px rgba(128, 0, 0, 0.45),
+        0 0 12px rgba(128, 0, 0, 0.3);
+}
+
+/* College Logo */
+.college-logo {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.95;
+    display: block;
+
+    transform: translate(-13px, -45px); /* left + up */
+}
+
+/* Buttons container */
+.college-buttons {
+    margin-top: -50px;          /* move UP (was 25px) */
+    display: flex;
+    gap: 150px;                 /* increase space between buttons */
+    justify-content: center;
+    margin-left: -26px;
+}
+
+/* Normal Button */
+.college-btn {
+    min-width: 10px;
+    height: 40px;
+    text-align: center;             /* normal button alignment */
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+    background-color: #9c4a2f;     /* button color */
+    color: #ffffff;
+
+    border: 1px solid rgba(139, 0, 0, 0.35);
+    padding: 0 26px;
+
+    font-size: 16px;
+    line-height: 42px;             /* vertically centers text */
+    border-radius: 6px;
+
+    cursor: pointer;
+    outline: none;                  /* removes blue border on focus */
+}
+
+/* Optional: Keep it same on hover and focus */
+.college-btn:hover,
+.college-btn:focus {
+    background-color: #9c4a2f;     /* same color on hover/focus */
+    color: #ffffff;
+    border: 1px solid rgba(139, 0, 0, 0.35);
+}

@@ -1,0 +1,346 @@
+:root {
+  --primary: #800000;
+  --background: #F4F1EA;
+  --heading: #1A2B3C;
+  --text: #5F6368;
+  --card-bg: #ffffff;
+
+  --present: #2ecc71;
+  --absent: #e74c3c;
+  --late: #f1c40f;
+  --excused: #5dade2;
+  --sick: #af7ac5;
+
+  --soft-bg: #f2f6ff;
+}
+
+/* PAGE */
+.classes-container {
+  background: var(--background);
+  padding: 25px;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.classes-header {
+  background: linear-gradient(90deg, #4b0000, #800000, #a83232);
+  color: white;
+  padding: 22px;
+  border-radius: 14px;
+}
+
+.classes-header h2 {
+  margin: 0;
+}
+
+.classes-header p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* MAIN WHITE CARD */
+.classes-white-card {
+  background: white;
+  padding: 18px 22px;
+  border-radius: 16px;
+  margin: 10px auto;
+  margin-top: -10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+}
+
+/* HEADER ROW */
+.attendance-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.attendance-left {
+  width: 100%;
+}
+
+.attendance-select-box label {
+  display: block;
+  font-size: 15px;
+  color: var(--heading);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.attendance-select-box select,
+.attendance-select-box input[type="date"],
+.attendance-select-box input[type="time"]{
+  width: 100%;
+  height: 42px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* RIGHT SIDE TIME */
+.attendance-right {
+  text-align: right;
+}
+
+.time-label {
+  font-size: 12px;
+  color: var(--text);
+  margin: 0;
+}
+
+.time-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f4b400;
+  margin: 4px 0;
+}
+
+.date-value {
+  font-size: 12px;
+  color: var(--text);
+  margin: 0;
+}
+
+/* ATTENDANCE PANEL LOOK */
+/* Added scrollbar here */
+/* ATTENDANCE PANEL LOOK */
+.attendance-panel {
+  background: var(--soft-bg);
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 20px;
+
+  max-height: 300px;        /* same height as admin */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;       /* same spacing like admin */
+}
+
+/* Scrollbar styling EXACTLY like AdminClasses */
+.attendance-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.attendance-panel::-webkit-scrollbar-thumb {
+  background-color: #800000;   /* same maroon */
+  border-radius: 10px;
+}
+
+.attendance-panel::-webkit-scrollbar-track {
+  background-color: #F4F1EA;   /* same background */
+}
+
+/* LEGEND TITLE */
+.attendance-panel h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: var(--heading);
+}
+.attendance-row-inputs{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:nowrap;
+  width:100%;
+}
+
+/* ========================= */
+/* CLEAN & MODERN TABLE UI   */
+/* ========================= */
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.students-table thead {
+  background: #f8f9fb;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.students-table th {
+  text-align: center;
+  color: var(--heading);
+  font-size: 14px;
+  padding: 14px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.students-table td {
+  padding: 14px;
+  text-align: center;
+  font-size: 13px;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+
+.students-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* STATUS BUTTON GROUP */
+.status-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.status-btn {
+  min-width: 80px;
+  border: 1px solid #ddd;
+  background: white;
+  padding: 6px 0;
+  border-radius: 7px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.status-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ACTIVE STATES */
+.status-btn.active.present {
+  background: #046a07;
+  color: white;
+  border-color:  #046a07;
+}
+
+.status-btn.active.absent {
+  background: #a4161a;
+  color: white;
+  border-color: #a4161a;
+}
+
+/* NOTES INPUT */
+.students-table input {
+  width: 90%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  outline: none;
+}
+
+.students-table input:focus {
+  border-color: #f4b400;
+  box-shadow: 0 0 0 2px rgba(244, 180, 0, 0.2);
+}
+
+/* SUBMIT BUTTON */
+.submit-attendance {
+  margin-top: 18px;
+}
+
+/* SUBMIT BUTTON – SAME AS DASHBOARD SIDEBAR BUTTONS */
+.submit-attendance button {
+  width: 100%;
+  background-color: #ffffff;      /* default white */
+  color: #800000;                 /* maroon text */
+  border: 1px solid #800000;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: none;
+  transition: 0.2s ease;
+}
+
+/* On hover → turn maroon */
+.submit-attendance button:hover,
+.submit-attendance button:active {
+  background-color: #800000;
+  color: #ffffff;
+  border-color: #800000;
+}
+
+/* Status header container */
+.status-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 🔹 FORCE BUTTONS IN ONE LINE */
+.mark-all-buttons {
+  display: flex;
+  flex-direction: row;   /* ⬅ ensures single line */
+  gap: 10px;
+  white-space: nowrap;   /* ⬅ prevents wrapping */
+}
+/* MARK ALL BUTTON BASE */
+/* MARK ALL BUTTON — MATCH ROW STATUS BUTTON SIZE */
+.mark-all-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  min-width: 80px;          /* same as .status-btn */
+  padding: 6px 10px;       /* same vertical feel */
+  height: 32px;            /* 👈 matches row buttons */
+
+  border-radius: 7px;      /* same as .status-btn */
+  font-weight: 600;
+  font-size: 12px;         /* same font size */
+  color: #fff;
+
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: none;        /* row buttons have no shadow */
+}
+
+/* PRESENT */
+.mark-all-btn.present {
+  background: #046a07;
+  border-color: #046a07;
+}
+
+/* ABSENT */
+.mark-all-btn.absent {
+  background: #a4161a;
+  border-color: #a4161a;
+}
+
+/* ICON — SHRUNK TO MATCH HEIGHT */
+.mark-all-btn .icon {
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attendance-row-inputs{
+  display:flex;
+  gap:20px;
+  align-items:flex-end;
+  flex-wrap:nowrap;   /* prevents moving to next line */
+}
+
+.attendance-row-inputs .attendance-select-box{
+  flex:1;
+  min-width:0;
+}
+
+/* make Select Class slightly wider */
+.attendance-row-inputs .attendance-select-box:first-child{
+  flex:1.4;
+}

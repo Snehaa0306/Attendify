@@ -1,0 +1,239 @@
+/* ================= COLOR PALETTE ================= */
+:root {
+  --primary: #800000;
+  --background: #F4F1EA;
+  --sidebar-bg: #FFFFFF;
+  --heading: #1A2B3C;
+  --text: #5F6368;
+  --card-bg: #FFFFFF;
+}
+
+/* ================================================= */
+/* ============== FACULTY CONTENT PAGE ============= */
+/* ================================================= */
+
+.faculty-container {
+  background: var(--background);
+  padding: 25px;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header */
+.faculty-header {
+  background: linear-gradient(90deg, #4b0000, #800000, #a83232);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: -27px;
+  margin-bottom: 8px;   /* 🔥 reduce gap below header */
+}
+
+.faculty-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.faculty-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Scroll only for Faculty Section */
+.faculty-section-scroll {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 6px;
+  margin-top: 5px;        /* 🔥 small spacing only */
+}
+
+/* Scrollbar styling */
+.faculty-section-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.faculty-section-scroll::-webkit-scrollbar-thumb {
+  background-color: #800000;
+  border-radius: 10px;
+}
+
+.faculty-section-scroll::-webkit-scrollbar-track {
+  background-color: #F4F1EA;
+}
+
+/* Common heading */
+.faculty-card-title {
+  color: var(--heading);
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Add Faculty Card */
+.add-faculty-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-top: 8px;        /* 🔥 reduced from 20px */
+  margin-bottom: 15px;
+}
+
+/* Add Faculty Form */
+.add-faculty-form {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.add-faculty-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.add-faculty-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.add-faculty-form button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.add-faculty-form button:hover {
+  background: #660000;
+}
+
+/* Faculty List Card */
+.faculty-list-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Header inside faculty list */
+.faculty-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+/* Search Box */
+.faculty-search-box {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.faculty-search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px 6px;
+  width: 120px;
+  font-size: 12px;
+  color: #666;
+  border-radius: 4px;
+}
+
+.faculty-search-input::placeholder {
+  color: #bdbdbd;
+}
+
+.search-btn {
+  border: none;
+  background: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  margin-left: 4px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.search-btn:hover {
+  background: #eeeeee;
+}
+
+/* ================= TABLE ================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #F8F8F8;
+}
+
+th {
+  text-align: center;
+  color: var(--heading);
+  padding: 10px;
+  font-size: 14px;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  color: var(--text);
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+td:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 18px;
+}
+
+/* Action Buttons */
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #3e8e41;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}

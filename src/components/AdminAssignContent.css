@@ -1,0 +1,233 @@
+/* ================= COLOR PALETTE ================= */
+:root {
+  --primary: #800000;
+  --background: #F4F1EA;
+  --sidebar-bg: #FFFFFF;
+  --heading: #1A2B3C;
+  --text: #5F6368;
+  --card-bg: #FFFFFF;
+}
+
+/* ================================================= */
+/* ============== ASSIGN CONTENT PAGE ============== */
+/* ================================================= */
+
+.assign-container {
+  background: var(--background);
+  padding: 25px;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header */
+.assign-header {
+  background: linear-gradient(90deg, #4b0000, #800000, #a83232);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: -27px;
+  margin-bottom: 8px;
+}
+
+.assign-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.assign-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ============================= */
+/* ATTENDANCE FILTER CARD FIX */
+/* ============================= */
+.attendance-filter-card {
+  padding-top: 8px;        /* ✅ reduced (was causing space) */
+}
+
+/* Common heading (USED BY ASSIGN + ATTENDANCE) */
+.assign-card-title {
+  color: var(--heading);
+  margin-top: 0;           /* 🔥 CRITICAL FIX */
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Add Assign Card */
+.add-assign-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Add Assign Form */
+.add-assign-form {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.add-assign-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.add-assign-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.add-assign-form button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.add-assign-form button:hover {
+  background: #660000;
+}
+
+/* Assign List Card */
+.assign-list-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+/* ================= TABLE ================= */
+
+.assign-list-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.assign-list-card thead {
+  background: #F8F8F8;
+}
+
+.assign-list-card th {
+  text-align: center;
+  color: var(--heading);
+  padding: 10px;
+  font-size: 14px;
+}
+
+.assign-list-card td {
+  text-align: center;
+  padding: 10px;
+  color: var(--text);
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.assign-list-card td:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 18px;
+}
+
+/* Action Buttons */
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #3e8e41;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+
+/* ================= DROPDOWN STYLING ================= */
+
+.add-assign-form select {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #1A2B3C;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='16' height='16' fill='%23800000' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 6l5 5 5-5H3z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px;
+}
+
+.add-assign-form select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(128, 0, 0, 0.15);
+}
+
+.add-assign-form select:disabled {
+  background-color: #f2f2f2;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.add-assign-form select:hover {
+  border-color: var(--primary);
+}
+
+/* Scroll only for Assignment Section */
+.assign-section-scroll {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 6px;
+  margin-top: 8px;
+}
+
+/* Scrollbar styling */
+.assign-section-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.assign-section-scroll::-webkit-scrollbar-thumb {
+  background-color: #800000;
+  border-radius: 10px;
+}
+
+.assign-section-scroll::-webkit-scrollbar-track {
+  background-color: #F4F1EA;
+}
+ 

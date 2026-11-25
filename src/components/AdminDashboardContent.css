@@ -1,0 +1,165 @@
+/* ================= COLOR PALETTE ================= */
+
+:root {
+    --primary: #800000;
+    --background: #F4F1EA;
+    --sidebar-bg: #FFFFFF;
+    --heading: #1A2B3C;
+    --text: #5F6368;
+    --card-bg: #FFFFFF;
+  }
+  
+  /* ================= DASHBOARD PAGE ================= */
+  
+  .dashboard-container {
+    background: var(--background);
+  padding: 25px;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* ================= HEADER ================= */
+  
+  .dashboard-header {
+    background: linear-gradient(90deg, #4b0000, #800000, #a83232);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: -27px;
+  margin-bottom: 8px;
+  }
+  
+  .dashboard-header h2 {
+    margin: 0;
+  font-size: 22px;
+  }
+  
+  .dashboard-header p {
+    margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+  }
+  
+  /* ================= SCROLL SECTION ================= */
+  
+  .dashboard-section-scroll {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 6px;
+    margin-top: 10px;
+  }
+  
+  /* Scrollbar */
+  
+  .dashboard-section-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .dashboard-section-scroll::-webkit-scrollbar-thumb {
+    background-color: #800000;
+    border-radius: 10px;
+  }
+  
+  .dashboard-section-scroll::-webkit-scrollbar-track {
+    background-color: #F4F1EA;
+  }
+  
+  /* ================= DASHBOARD CARDS ================= */
+  
+  .dashboard-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-card {
+    flex: 1;
+    min-width: 200px;
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  }
+  
+  .dashboard-card h3 {
+    color: var(--heading);
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .dashboard-card p {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--primary);
+    margin: 0;
+  }
+  
+  /* ================= INFO CARD ================= */
+  
+  .dashboard-info-card {
+    background: var(--card-bg);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  
+  .dashboard-card-title {
+    color: var(--heading);
+    margin-top: -1px; 
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .dashboard-info-card p {
+    color: var(--text);
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  .dashboard-info-card ul {
+    color: var(--text);
+    padding-left: 18px;
+    margin: 0;
+  }
+  
+  .dashboard-info-card li {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+/* ================= QUICK ACTIONS ================= */
+
+.quick-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;   /* keep buttons in one line */
+  margin-top: 10px;
+}
+
+/* Buttons */
+
+.quick-btn {
+  flex: 1;             /* make buttons equal width */
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.quick-btn:hover {
+  background: #5a0000;
+  transform: translateY(-2px);
+}

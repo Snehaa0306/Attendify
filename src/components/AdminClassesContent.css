@@ -1,0 +1,355 @@
+/* Container */
+.classes-container {
+  background: var(--background);
+  padding: 25px;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header */
+.classes-header {
+  background: linear-gradient(90deg, #4b0000, #800000, #a83232);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  height: 55px;
+  margin-top: -27px;
+  margin-bottom: 8px;
+}
+
+.classes-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.classes-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Header row (Academic Year + Back) */
+.header-row {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Academic Year text */
+.header-row h2 {
+  margin: 0;
+  line-height: 1;
+}
+
+/* Back button */
+.back-btn {
+  margin: 0;
+  padding: 4px 10px; /* slightly smaller button */
+}
+
+/* Undergraduate title */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 6px;
+  line-height: 1.1;
+}
+
+
+.add-year-form {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  
+  /* 👇 ADD THIS */
+  margin-top: 15px;  
+}
+
+/* Title inside the card */
+.add-year-title {
+  color: #1A2B3C;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Input + button row */
+.add-year-input-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.add-year-input-row input {
+  padding: 10px;
+  width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.add-year-input-row button {
+  padding: 10px 18px;
+  border: none;
+  background: #800000;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-year-input-row button:hover {
+  background: #660000;
+}
+
+
+.add-year-form input {
+  padding: 10px;
+  width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-year-form button {
+  padding: 10px 16px;
+  border: none;
+  background: #800000;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-year-form button:hover {
+  background: #660000;
+}
+
+/* Scroll only for Academic Year → Classes */
+.year-classes-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* Scrollbar styling only here */
+.year-classes-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.year-classes-scroll::-webkit-scrollbar-thumb {
+  background-color: #800000;
+  border-radius: 10px;
+}
+
+.year-classes-scroll::-webkit-scrollbar-track {
+  background-color: #F4F1EA;
+}
+
+/* Header Row */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Back Button */
+.back-btn {
+  padding: 6px 14px;
+  border: none;
+  background: #800000;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #660000;
+}
+
+/* Section Title */
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1A2B3C;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Grid */
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Class Box */
+.class-box {
+  background-color: #FFFFFF;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1A2B3C;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.class-box:hover {
+  background-color: #800000;
+  color: #FFFFFF;
+  transform: translateY(-3px);
+}
+
+/* Students Table */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.students-table th,
+.students-table td {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.students-table th {
+  background: #F8F8F8;
+  color: #1A2B3C;
+}
+
+.students-table td {
+  color: #5F6368;
+  border-top: 1px solid #ddd;
+}
+
+.excel-upload-card {
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+}
+
+.excel-upload-inline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;      /* prevents line break */
+}
+
+.excel-upload-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A2B3C;
+  margin: 0;
+}
+
+.excel-file-input {
+  background: #800000;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.excel-file-input:hover {
+  background: #660000;
+}
+
+.excel-file-name {
+  font-size: 13px;
+  color: #5F6368;
+}
+
+.delete-btn {
+  background: #b30000;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background: #800000;
+}
+
+/* Manual Add Student Box */
+.manual-add-card {
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 12px;
+}
+
+.manual-add-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A2B3C;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Each row of inputs */
+.manual-add-inline {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
+}
+
+.manual-add-inline input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  width: 160px;
+}
+
+.manual-add-inline button {
+  background: #800000;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.manual-add-inline button:hover {
+  background: #660000;
+}
+
+/* Scroll only for Student Section (same like Academic Year section) */
+.student-section-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 6px;
+  margin-top: 10px;
+}
+
+/* Scrollbar styling only here */
+.student-section-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.student-section-scroll::-webkit-scrollbar-thumb {
+  background-color: #800000;
+  border-radius: 10px;
+}
+
+.student-section-scroll::-webkit-scrollbar-track {
+  background-color: #F4F1EA;
+}
